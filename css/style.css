@@ -1,0 +1,171 @@
+/***********************************
+Basic Setup
+***********************************/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: black;
+    color: white;
+}
+
+.container{
+    /* border: 2px solid red; */
+    max-width: 1080px;
+    width: 95%;
+    margin: 1.5em auto 0 auto;
+    position: relative;
+}
+
+/***********************************
+Typography
+***********************************/
+#headline{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.player__name{
+    font-size: 2.5em;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.player__score{
+    font-size: 6em;
+    font-weight: 200;
+}
+
+.current__label{
+    font-size: .8em;
+}
+
+.current__score{
+    font-size: 2em;
+}
+
+button{
+    font-size: 2em;
+}
+
+/***********************************
+Icons
+***********************************/
+i{
+    margin-right: .3em;
+    color: #43aa8b;
+    font-size: 1.1em;
+}
+
+
+/***********************************
+Game-Box
+***********************************/
+#game-box{
+    /* border: 2px solid orange; */
+    width: 95%;
+    display: flex;
+    margin: 0 auto;
+    background-color:#343a40; 
+}
+
+.active { background-color:#495057;}
+.active .player__name { 
+    font-weight: 300;
+    color: #4ecdc4;
+}
+
+.current__box{
+    margin-top: 4em;
+    padding: 0.8em 1.8em;
+    text-align: center;
+    background-color: #3c6e71;
+    text-transform: uppercase;
+}
+
+.current__score{
+    margin-top: .3em;
+}
+
+
+/***********************************
+Player 1 Box
+***********************************/
+.player-0-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid green; */
+    width: 50%;
+    padding: 5em 0;
+}
+
+/***********************************
+Player 2 Box
+***********************************/
+.player-1-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid blue; */
+    width: 50%;
+    padding: 4.8em 0;
+}
+
+/***********************************
+Buttons
+***********************************/
+
+button{
+    position: absolute;
+    cursor: pointer;
+    width: 200px;
+    left: 50%;
+    transform: translate(-50%);
+    background: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1.4em;
+    border: none;
+    outline: none;
+}
+
+.btn__new { top: 110px;}
+.btn__roll { top: 380px;}
+.btn__hold { top: 445px;}
+.btn__rules{
+    top: 520px;
+    background: #3c6e71;
+    color: white;
+    font-size: 1.2em;
+    width: 130px;
+    padding: .3em 0;
+    border-radius: 3px;
+}
+.fa-cog{
+    color: white;
+}
+
+
+/***********************************
+Dice
+***********************************/
+.dice{
+    position: absolute;
+    left: 50%;
+    top: 220px;
+    transform: translateX(-50%);
+    height: 100px;
+}
+
+
+/***********************************
+Victory
+***********************************/
+.victory{
+    color: red;
+    font-weight: 700;
+}
